@@ -58,7 +58,7 @@ readData <- function(directory, filename) {
   ## sort the vector 
   mean_std_data_cols <- sort(mean_std_data_cols)
   
-  # subset the data (done early to save memory)
+  # subset the data
   x_data <- x_data[,mean_std_data_cols]
   
   # append the activity id and subject id columns
